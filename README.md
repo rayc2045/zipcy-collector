@@ -1,2 +1,7 @@
-# zipcy-collecter
-Zipcy's SuperNormal NFTs screenshot helper
+# Zipcy Collecter
+Zipcy's SuperNormal NFTs image-saving helper
+
+### Usage
+
+    pnpm i
+    pnpm start
