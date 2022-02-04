@@ -1,0 +1,12 @@
+{
+	"name": "zipcy-collecter",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js"
+	},
+	"author": "Ray C",
+	"dependencies": {
+		"puppeteer-core": "^13.1.3"
+	}
+}
