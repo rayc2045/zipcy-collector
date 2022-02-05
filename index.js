@@ -42,8 +42,8 @@ createFolder(collectionName);
       document.querySelector('.Asset--anchor img').src.replace(/=w.../, '=s0')
     );
 
-    await downloadFile(imageUrl, collectionName);
-    console.clear();
-    console.log(`Save "${nftName} ${getNftNumber(i)}" to "${collectionName}"`);
+    const imageName = `${nftName} ${getNftNumber(i)}`;
+    await downloadFile(imageUrl, `${collectionName}/${imageName}.png`);
+    console.log(`Save "${imageName}.png"`);
   }
 })();
