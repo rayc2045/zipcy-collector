@@ -30,7 +30,7 @@ createFolder(collectionName);
 
   for (let i = 1; i <= nftNum; i++) {
     await page.goto(
-      `https://opensea.io/assets?search[query]=${searchKeyword}%20${nftName}%23${getNftNumber(
+      `https://opensea.io/assets?search[query]=${searchKeyword}%20${nftName}%20%23${getNftNumber(
         i
       ).replace('#', '')}`,
       { waitUntil: 'domcontentloaded' }
