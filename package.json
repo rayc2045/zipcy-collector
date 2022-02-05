@@ -1,5 +1,5 @@
 {
-	"name": "zipcy-collecter",
+	"name": "zipcy-collector",
 	"version": "1.0.0",
 	"main": "index.js",
 	"scripts": {
