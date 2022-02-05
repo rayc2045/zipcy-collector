@@ -38,10 +38,9 @@ createFolder(collectionName);
 
     await page.waitForSelector('.Asset--anchor');
 
-    const imageUrl = await page.evaluate(() => {
-      const img = document.querySelector('.Asset--anchor img');
-      return img.src.replace(/=w.../, '=s0');
-    });
+    const imageUrl = await page.evaluate(() =>
+      document.querySelector('.Asset--anchor img').src.replace(/=w.../, '=s0')
+    );
 
     await downloadFile(imageUrl, collectionName);
     console.clear();
