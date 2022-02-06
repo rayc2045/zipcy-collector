@@ -57,4 +57,5 @@ const searchKeyword = 'SuperNormal';
   }
 
   await browser.close();
+  console.log('Complete downloading.');
 })();
