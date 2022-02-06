@@ -3,11 +3,12 @@ const { createFolder, getNftNumber, downloadFile } = require('./utils');
 
 const collectionName = `Zipcy's SuperNormal`;
 const nftName = 'ZIPS';
-const searchKeyword = 'zipcy';
+const searchKeyword = 'superNormal';
 const nftNum = 8888;
-createFolder(collectionName);
 
 (async () => {
+  createFolder(collectionName);
+
   const browser = await puppeteer.launch({
     executablePath:
       '/Applications/Brave Browser.app/Contents/MacOS/Brave Browser',
@@ -30,9 +31,9 @@ createFolder(collectionName);
 
   for (let i = 1; i <= nftNum; i++) {
     await page.goto(
-      `https://opensea.io/assets?search[query]=${searchKeyword}%20${nftName}%20%23${getNftNumber(
-        i
-      ).replace('#', '')}`,
+      `https://opensea.io/assets?search[query]=${searchKeyword}%20${nftName}%20%23${
+        getNftNumber(i).replace('#', '')
+      }`,
       { waitUntil: 'domcontentloaded' }
     );
 
