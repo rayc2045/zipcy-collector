@@ -2,9 +2,14 @@
 
 ![Photo](https://lh3.googleusercontent.com/hz79JHigNf9yzHmDOnekfEYbu30BJrhF-Zz7TteVV1mYE-X6nYXQuFhUEAfHhdUvJirwzai9B_fX30RnuDSfZWDa7K_YSbzMHEpa=h600)
 
+### 簡介
+2021 年可以說是 NFT 大爆發的一年了，除了名人相繼創立自己的 NFT，也有各式各樣的商業模式和額外賦能不停的被開發出來；像是主打邊玩邊賺的 (Play-to-Earn，P2E) GameFi 項目「[Axie Infinity](https://axieinfinity.com/)」、擁有即可兌換一天一碗且連續七天雞肉飯的「[元宇宙第一雞肉飯](https://opensea.io/collection/metaverse-no-1-chicken-rice)」，或是方格子創作平台與藝術家合作原創、持有即可解鎖一年份 Premium 會員資格和不定期禮物的「[Vocus and Friends](https://vocus.cc/vaf)」等。而最近意外發現的「[Zipcy's SuperNormal](https://opensea.io/collection/supernormalbyzipcy)」更是藉由結合亞洲與時尚元素，在成千上萬的 NFT 項目中脫穎而出。為其藝術風格感到驚艷的我，決心將 8,888 張作品圖儲存並作為自動定期更換的電腦桌布，故有了這次的專案。
+
 ### Requirements
 - MacOS
-- Brave Browser
+- [Node.js](https://nodejs.org/en/download/)
+- [pnpm](https://pnpm.io/installation)
+- [Brave Browser](https://brave.com/download/)
 
 ### Usage
 
