@@ -3,15 +3,14 @@ const { createFolder, getNftNumber, downloadFile } = require('./utils');
 
 const collectionName = `Zipcy's SuperNormal`;
 const nftName = 'ZIPS';
-const searchKeyword = 'superNormal';
 const nftNum = 8888;
+const searchKeyword = 'SuperNormal';
 
 (async () => {
   createFolder(collectionName);
 
   const browser = await puppeteer.launch({
-    executablePath:
-      '/Applications/Brave Browser.app/Contents/MacOS/Brave Browser',
+    executablePath: '/Applications/Brave Browser.app/Contents/MacOS/Brave Browser',
     ignoreDefaultArgs: ['--enable-automation'],
     args: ['--incognito', '--window-size=1920,1080'],
     defaultViewport: null,
@@ -47,4 +46,6 @@ const nftNum = 8888;
     await downloadFile(imageUrl, `${collectionName}/${imageName}.png`);
     console.log(`Save "${imageName}.png"`);
   }
+
+  await browser.close();
 })();
