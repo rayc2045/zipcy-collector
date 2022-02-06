@@ -28,7 +28,9 @@ const searchKeyword = 'SuperNormal';
    *    3. Save image to folder `${collectionName}`
    */
 
-  for (let i = 1; i <= nftNum; i++) {
+  let i = 1;
+
+  while (i <= nftNum) {
     await page.goto(
       `https://opensea.io/assets?search[query]=${searchKeyword}%20${nftName}%20%23${
         getNftNumber(i).replace('#', '')
@@ -36,7 +38,12 @@ const searchKeyword = 'SuperNormal';
       { waitUntil: 'domcontentloaded' }
     );
 
-    await page.waitForSelector('.Asset--anchor');
+    try {
+      await page.waitForSelector('.Asset--anchor');
+    } catch (error) {
+      console.log('TimeoutError: timeout 30000ms exceeded');
+      continue;
+    }
 
     const imageUrl = await page.evaluate(() =>
       document.querySelector('.Asset--anchor img').src.replace(/=w.../, '=s0')
@@ -44,7 +51,9 @@ const searchKeyword = 'SuperNormal';
 
     const imageName = `${nftName} ${getNftNumber(i)}`;
     await downloadFile(imageUrl, `${collectionName}/${imageName}.png`);
+
     console.log(`Save "${imageName}.png"`);
+    i++;
   }
 
   await browser.close();
