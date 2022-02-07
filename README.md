@@ -1,6 +1,6 @@
 # Zipcy Collector - Automatically download all 8.9k Zipcy's SuperNormal NFT images
 
-![Photo](https://lh3.googleusercontent.com/hz79JHigNf9yzHmDOnekfEYbu30BJrhF-Zz7TteVV1mYE-X6nYXQuFhUEAfHhdUvJirwzai9B_fX30RnuDSfZWDa7K_YSbzMHEpa=h600)
+![Photo](https://cdn.dribbble.com/users/3800131/screenshots/17448811/media/0bd7c7b7e9120ff5f955c928386db6e7.png)
 
 [> Zipcy Collector](https://github.com/rayc2045/zipcy-collector/archive/refs/heads/main.zip)
 
