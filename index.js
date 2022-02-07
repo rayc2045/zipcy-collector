@@ -4,6 +4,7 @@ const { createFolder, getNftNumber, downloadFile } = require('./utils');
 const collectionName = `Zipcy's SuperNormal`;
 const nftName = 'ZIPS';
 const nftNum = 8888;
+const imageType = 'png';
 const searchKeyword = 'SuperNormal';
 
 (async () => {
@@ -28,9 +29,9 @@ const searchKeyword = 'SuperNormal';
    *    3. Save image to folder `${collectionName}`
    */
 
-  let i = 1;
+  let i = 0;
 
-  while (i <= nftNum) {
+  while (i < nftNum) {
     await page.goto(
       `https://opensea.io/assets?search[query]=${searchKeyword}%20${nftName}%20%23${
         getNftNumber(i).replace('#', '')
@@ -50,7 +51,7 @@ const searchKeyword = 'SuperNormal';
     );
 
     const imageName = `${nftName} ${getNftNumber(i)}`;
-    await downloadFile(imageUrl, `${collectionName}/${imageName}.png`);
+    await downloadFile(imageUrl, `${collectionName}/${imageName}.${imageType}`);
 
     console.log(`Save "${imageName}.png"`);
     i++;
