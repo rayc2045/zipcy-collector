@@ -6,7 +6,7 @@ const {
   nftNum,
   imageType,
   searchKeyword
-} = require('./nft');
+} = require('./data');
 
 (async () => {
   createFolder(collectionName);
