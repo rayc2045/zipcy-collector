@@ -1,11 +1,12 @@
 const puppeteer = require('puppeteer-core');
 const { createFolder, getNftNumber, downloadFile } = require('./utils');
-
-const collectionName = `Zipcy's SuperNormal`;
-const nftName = 'ZIPS';
-const nftNum = 8888;
-const imageType = 'png';
-const searchKeyword = 'SuperNormal';
+const {
+  collectionName,
+  nftName,
+  nftNum,
+  imageType,
+  searchKeyword
+} = require('./nft');
 
 (async () => {
   createFolder(collectionName);
