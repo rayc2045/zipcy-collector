@@ -59,5 +59,5 @@ const {
   }
 
   await browser.close();
-  console.log('Complete downloading.');
+  console.log('Complete downloa.');
 })();
