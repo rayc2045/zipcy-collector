@@ -25,7 +25,7 @@ const {
 
   /**
    * loop ${nftNum} times:
-   *    1. Go to OpenSea link with search query ("zipcy ZIPS #0001"), and wait for NFT item
+   *    1. Go to OpenSea link with search query ("zipcy ZIPS #0000"), and wait for NFT item
    *    2. Get 1st NFT image url, replace "=w..." with "=s0"
    *    3. Save image to folder `${collectionName}`
    */
