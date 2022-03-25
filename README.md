@@ -1,4 +1,4 @@
-# Zipcy Collector｜自動收集 8,888 張 Zipcy's SuperNormal NFT 圖片
+# Zipcy Collector｜自動儲存 8,888 張 Zipcy's SuperNormal NFT 圖片
 
 ![Photo](https://cdn.dribbble.com/users/3800131/screenshots/17450613/media/e9a42608aee97984ef494cf03c4837f0.png)
 
