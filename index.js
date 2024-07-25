@@ -12,6 +12,15 @@ const {
   createFolder(collectionName);
 
   const browser = await puppeteer.launch({
+    // executablePath: "/Applications/Firefox.app/Contents/MacOS/firefox",
+    // executablePath: "/Applications/Firefox Developer Edition.app/Contents/MacOS/firefox",
+    // product: "firefox",
+    // executablePath: "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+    // executablePath: "/Applications/Google Chrome Beta.app/Contents/MacOS/Google Chrome Beta",
+    // executablePath: "/Applications/Google Chrome Canary.app/Contents/MacOS/Google Chrome Canary",
+    // executablePath: "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge",
+    // executablePath: "/Applications/Microsoft Edge Beta.app/Contents/MacOS/Microsoft Edge Beta",
+    // executablePath: "/Applications/Microsoft Edge Dev.app/Contents/MacOS/Microsoft Edge Dev",
     executablePath: '/Applications/Brave Browser.app/Contents/MacOS/Brave Browser',
     ignoreDefaultArgs: ['--enable-automation'],
     args: ['--incognito', '--window-size=1920,1080'],
