@@ -17,7 +17,7 @@
 - 64.34 GB available space
 - [Node.js](https://nodejs.org/en/download/)
 - [pnpm](https://pnpm.io/installation)
-- [Brave Browser](https://brave.com/download/)
+- Chromium-based browser
 
 ### Usage
 
