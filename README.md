@@ -13,10 +13,8 @@
 - 有時導向 OpenSea 網址時會遇到連接逾時的錯誤 (HTTP 504 Gateway Timeout Error)，藉由結合 `try...catch` 方法和 While Loop 中的 `continue`，達成中斷續載功能。
 
 ### Requirements
-- MacOS
 - 64.34 GB available space
 - [Node.js](https://nodejs.org/en/download/)
-- [pnpm](https://pnpm.io/installation)
 - Chromium-based browser
 
 ### Usage
